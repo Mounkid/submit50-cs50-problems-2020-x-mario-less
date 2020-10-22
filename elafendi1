@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <cs50.h>
+int main ()
+{
+int stairs = get_int ("give the number of stairts ");
+int nn=2;
+
+for (int i=0; i<stairs;i++) {
+     for (int j = 1 << stairs ; j > 0; j=j/2) (nn-1 & j)? printf("#") :printf(" ");
+printf("\n");
+nn = nn*2;
+}
+return 0;
+}
